@@ -9,7 +9,7 @@ from pyod.models.abod import ABOD
 class AnomalyDetection:
     def __init__(self):
         self.training_data = None
-        self.models = [HBOS(), KNN(), OCSVM()]
+        self.models = [HBOS(), KNN(), OCSVM(), ABOD()]
         self.model_names = [model.__class__.__name__ for model in self.models]
         self.selected_model = None
         self.current_date = None  # keep track of the current date
